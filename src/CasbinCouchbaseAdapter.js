@@ -1,6 +1,6 @@
 const {Helper, Model} = require( 'casbin' );
 const CasbinPolicyModel = require( './CasbinPolicyModel' );
-const PermissionRepository = require( './PermissionRepository' );
+const PolicyRepository = require( './PolicyRepository' );
 //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
 /**
  * Implements a policy adapter for Casbin with Couchbase support.
@@ -34,7 +34,7 @@ class CasbinCouchbaseAdapter
 		this.isFiltered = options.isFiltered || false;
 		options.bucketURI = uri;
 		
-		this.policyRepository = new PermissionRepository( options );
+		this.policyRepository = new PolicyRepository( options );
 	}
 
 	/**

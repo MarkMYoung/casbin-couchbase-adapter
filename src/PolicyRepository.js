@@ -1,7 +1,7 @@
 const Couchbase = require( 'couchbase' );
 const CasbinPolicyModel = require( './CasbinPolicyModel' );
 //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
-class PermissionRepository
+class PolicyRepository
 {
 	constructor( options )
 	{
@@ -161,4 +161,4 @@ class PermissionRepository
 	}
 }
 //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
-module.exports = PermissionRepository;
+module.exports = PolicyRepository;

@@ -1,11 +1,11 @@
 {
 	"name": "casbin-couchbase-adapter",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Couchbase adapter for Casbin.",
 	"author": "Mark M. Young",
 	"dependencies": {
 		"casbin": "^2.0.4",
-		"couchbase": "^2.6.4"
+		"couchbase": "2.5.1"
 	},
 	"keywords": [
 		"casbin",
