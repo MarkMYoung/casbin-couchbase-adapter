@@ -59,3 +59,6 @@ typings/
 
 # next.js build output
 .next
+
+# Apple macOS operating system custom attributes of containing folder
+.DS_Store 

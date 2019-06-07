@@ -1,0 +1,27 @@
+{
+	"name": "casbin-couchbase-adapter",
+	"version": "0.0.1",
+	"description": "Couchbase adapter for Casbin.",
+	"author": "Mark M. Young",
+	"dependencies": {
+		"casbin": "^2.0.4",
+		"couchbase": "^2.6.4"
+	},
+	"keywords": [
+		"casbin",
+		"couchbase"
+	],
+	"license": "GPL-3.0",
+	"main": "index.js",
+	"browser": {
+		"casbin-couchbase-adapter": "./src/CasbinCouchbaseAdapter.js"
+	},
+	"homepage": "https://github.com/MarkMYoung/casbin-couchbase-adapter",
+	"bugs": {
+		"url": "https://github.com/MarkMYoung/casbin-couchbase-adapter/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MarkMYoung/casbin-couchbase-adapter.git"
+	}
+}
