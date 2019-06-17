@@ -46,7 +46,8 @@ class PolicyRepository
 			casbinPolicy.v0, casbinPolicy.v1, casbinPolicy.v2, 
 			casbinPolicy.v3, casbinPolicy.v4, casbinPolicy.v5
 		];
-		const key = parts.join( this.keyDelimiter );
+		const firstMissingValue = parts.findIndex( part => typeof( part ) === 'string' && !part );
+		const key = parts.slice( 0, firstMissingValue ).join( this.keyDelimiter );
 		return( key );
 	}
 
